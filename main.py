@@ -240,7 +240,7 @@ def process_data(separated_word):
     return result_word
 
 
-str_data = input()
+str_data = input("발음을 알고 싶은 단어를 입력하세요 : ")
 divided_data = []
 result_word = []
 divided_data = korean_to_be_englished(str_data)
