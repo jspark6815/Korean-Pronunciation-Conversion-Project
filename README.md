@@ -23,7 +23,7 @@ python main.py
 
 ## Prototype Image
 
-![Prototype](./example.PNG)
+![Prototype](./Example.PNG)
 
 
 
