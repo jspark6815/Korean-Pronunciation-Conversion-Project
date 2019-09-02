@@ -5,7 +5,7 @@ Middle_LIST = ['ㅏ', 'ㅐ', 'ㅑ', 'ㅒ', 'ㅓ', 'ㅔ', 'ㅕ', 'ㅖ', 'ㅗ', '�
 # 종성 리스트 28
 Last_LIST = [' ', 'ㄱ', 'ㄲ', 'ㄳ', 'ㄴ', 'ㄵ', 'ㄶ', 'ㄷ', 'ㄹ', 'ㄺ', 'ㄻ', 'ㄼ', 'ㄽ', 'ㄾ', 'ㄿ', 'ㅀ', 'ㅁ', 'ㅂ', 'ㅄ', 'ㅅ', 'ㅆ', 'ㅇ', 'ㅈ', 'ㅊ', 'ㅋ', 'ㅌ', 'ㅍ', 'ㅎ']
 
-def korean_to_be_englished(korean_word):
+def korean_translation(korean_word):
     r_lst = []
     for w in list(korean_word.strip()):
         if '가'<=w<='힣':
@@ -243,5 +243,5 @@ def process_data(separated_word):
 str_data = input("발음을 알고 싶은 단어를 입력하세요 : ")
 divided_data = []
 result_word = []
-divided_data = korean_to_be_englished(str_data)
+divided_data = korean_translation(str_data)
 print("결과 : " + ''.join(process_data(divided_data)))
